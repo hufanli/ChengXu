@@ -1,0 +1,15 @@
+---- Show_Temp_Flash_Flag Matches (14 in 5 files) ----
+Bsp_ht1621b.c (e:\work\写程序\温控器\新工程\time4_1\src):u8 Show_Temp_Flash_Flag = 0;///温度显示闪烁标志0不闪烁，1闪烁
+Bsp_ht1621b.c (e:\work\写程序\温控器\新工程\time4_1\src):	Show_Temp_Flash_Flag = 0;//关掉闪烁标志
+Bsp_ht1621b.h (e:\work\写程序\温控器\新工程\time4_1\src):extern u8 Show_Temp_Flash_Flag;
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):    				if(Show_Temp_Flash_Flag)///当闪烁时不去改变模式
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):    					Show_Temp_Flash_Flag = 0;///一旦按下本健则停止闪烁
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):				if(Show_Temp_Flash_Flag)///当闪烁时不去改变模式
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):					Show_Temp_Flash_Flag = 0;///一旦按下本健则停止闪烁
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):					Show_Temp_Flash_Flag = 1;//进行闪烁
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):					Show_Temp_Flash_Flag = 1;//进行闪烁
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):					Show_Temp_Flash_Flag = 1;//进行闪烁
+Bsp_key.c (e:\work\写程序\温控器\新工程\time4_1\src):					Show_Temp_Flash_Flag = 1;//进行闪烁
+Main.c (e:\work\写程序\温控器\新工程\time4_1\src):		if((get_temp_time == 0)&&(Show_Temp_Flash_Flag==0)&&(MKey_PullDown_Flag == 0)&&(WindKey_PullDown_Flag == 0)&&(DownKey_PullDown_Flag == 0))
+Main.c (e:\work\写程序\温控器\新工程\time4_1\src):		if(wind_sun_slecet&&(!Show_Temp_Flash_Time)&&Show_Temp_Flash_Flag)
+Sys_config.c (e:\work\写程序\温控器\新工程\time4_1\src):			Show_Temp_Flash_Flag = 0;///一旦背光关掉就关掉闪烁

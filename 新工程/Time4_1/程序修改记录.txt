@@ -1,0 +1,19 @@
+2015.3.13
+修改中断TIM4，将中断放在stm8s_it.c和.h内
+呼吸灯每秒闪烁成功
+定时器时基15.625ms
+
+CLK_ECKR  = 0x01;
+		while(!(CLK_ECKR&0x02));
+		CLK_SWCR  = 0x02;
+		CLK_SWR   = 0xb4;
+		while(!(CLK_SWCR&0X08));
+		while(CLK_CMSR!=0xb4);
+		CLK_SWCR  = 0x00;
+		//while(CLK_ICKR&0X02);
+		CLK_CKDIVR = 0X00;
+		CLK_PCKENR1=0Xb0;
+		CLK_PCKENR2=0X7b;
+
+2015.08.13
+AllScreen_Show_Open_Flag变量，同时各个条件判断都加上了DownKey_PullDown_Flag
